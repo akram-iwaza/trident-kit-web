@@ -1,0 +1,417 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+body {
+  @apply font-sans;
+}
+
+* {
+  user-select: none;
+  @apply font-sans;
+}
+
+.COLORR {
+  color: #d5dbdb;
+}
+
+html {
+  @apply transition-colors duration-300 ease-in-out;
+}
+
+button {
+  -webkit-app-region: no-drag; /* Prevents this button from being draggable */
+}
+
+.App-header {
+  -webkit-app-region: drag; /* Makes this area draggable */
+}
+
+.no-drag {
+  -webkit-app-region: no-drag; /* Makes these elements non-draggable */
+}
+
+.ReactVirtualized__Table__headerColumn {
+  font-weight: 400 !important;
+}
+.ReactVirtualized__Table__headerRow {
+  border-bottom: 1px solid #27262b;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background: transparent; /* or any other color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d0d6d4; /* or any other color */
+  border-radius: 4px;
+  height: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #93e5ab; /* or any other color */
+}
+
+/* Customize scrollbar for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #93e5ab #d0d6d4;
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.zIndex {
+  z-index: 99999 !important;
+}
+
+div[class=" css-1jqq78o-placeholder"] {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 140px !important;
+}
+
+@media (min-width: 1180px) {
+  div[class=" css-1jqq78o-placeholder"] {
+    max-width: 150px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+:root {
+  --background-color: #1c1c1e !important;
+  --border-color: #27262b !important;
+  --border-color2: #27262b !important;
+  --box-shadow-color: #27262b !important;
+  -webkit-tap-highlight-color: #1c1c1e !important;
+  --color: #d0d6d4 !important;
+  --Hovercolor: #93e5ab !important;
+}
+/* Dark mode */
+.dark-mode {
+  --background-color: #fff !important;
+  --border-color: #ebeff0 !important;
+  --border-color2: #c0c3c4 !important;
+  --box-shadow-color: #ebeff0 !important;
+  --webkit-tap-highlight-color: #fff !important;
+  --color: #383838 !important;
+  --Hovercolor: #67d788 !important;
+}
+div[class="ReactVirtualized__Table__headerRow bg-[#f2f7f8] dark:bg-[#232323] text-default dark:text-white"] {
+  border-bottom: 1px solid var(--border-color2) !important;
+}
+
+div[class=" css-13cymwt-control"] {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  height: 1rem !important;
+  outline: 0 !important;
+  position: relative;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  border-radius: 0.5rem !important;
+  outline: none !important;
+  overflow-y: auto;
+  background-color: var(--background-color) !important;
+  box-shadow: 0 0 0 1px var(--box-shadow-color) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+div[class=" css-t3ipsp-control"] {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: start;
+  cursor: default;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  min-height: 38px;
+  max-height: 38px !important;
+  outline: 0 !important;
+  position: relative;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  border-radius: 0.5rem !important;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  outline: none !important;
+  overflow-y: auto;
+  background-color: var(--background-color) !important;
+  border-color: var(--border-color) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: 0 0 0 1px var(--box-shadow-color) !important;
+}
+
+/* //diables */
+div[class=" css-16xfy0z-control"] {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: start;
+  cursor: default;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  min-height: 38px;
+  max-height: 38px !important;
+  outline: 0 !important;
+  position: relative;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  border-radius: 0.5rem !important;
+  border-style: solid;
+  border-width: 1px !important;
+  box-sizing: border-box;
+  outline: none !important;
+  overflow-y: auto;
+  background-color: var(--background-color) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: 0 0 0 1px var(--box-shadow-color) !important;
+}
+
+div[class=" css-1wy0on6"] {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+span[class=" css-1u9des2-indicatorSeparator"] {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  width: 1.3px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  background-color: var(--background-color) !important;
+}
+
+div[class=" css-t3ipsp-control"]:hover {
+  border-color: var(--border-color) !important;
+  box-shadow: 0 0 0 1px var(--box-shadow-color) !important;
+  -webkit-tap-highlight-color: var(--webkit-tap-highlight-color) !important ;
+}
+
+div[class=" css-1nmdiq5-menu"] {
+  border: 1px solid var(--border-color) !important;
+  background-color: var(--background-color) !important;
+  -webkit-tap-highlight-color: var(--webkit-tap-highlight-color) !important ;
+  color: var(--color) !important;
+  box-shadow: 0 0 0 1px var(--box-shadow-color) !important;
+}
+div[class=" css-10wo9uf-option"]:hover {
+  color: var(--Hovercolor) !important;
+
+  border: 1px solid var(--border-color) !important;
+  background-color: var(--background-color) !important;
+  -webkit-tap-highlight-color: var(--webkit-tap-highlight-color) !important ;
+}
+div[class=" css-d7l1ni-option"] {
+  color: var(--Hovercolor) !important;
+
+  -webkit-tap-highlight-color: none !important ;
+  border: none !important;
+  background-color: var(--background-color) !important;
+}
+div[class="css-d7l1ni-option"]:hover {
+  background-color: var(--background-color) !important;
+  color: var(--Hovercolor) !important;
+  border: none !important;
+  -webkit-tap-highlight-color: none !important ;
+}
+
+div[class=" css-1p3m7a8-multiValue"] {
+  background-color: var(--background-color) !important;
+  color: var(--Hovercolor) !important;
+  border: none !important;
+  color: var(--color) !important;
+  border-radius: 0.5rem !important;
+}
+div[class=" css-9jq23d"] {
+  color: var(--color) !important;
+}
+div[class=" css-v7duua"] {
+  color: var(--Hovercolor) !important;
+
+  background-color: transparent !important;
+}
+
+div[class=" css-tr4s17-option"] {
+  color: var(--Hovercolor) !important;
+
+  background-color: transparent !important;
+}
+div[class=" css-19bb58m"] {
+  color: var(--color) !important;
+  /* display: none; */
+}
+div[class=" css-1dimb5e-singleValue"] {
+  color: var(--color) !important;
+}
+div[class=" css-1cfo1cf"] {
+  color: var(--color) !important;
+}
+
+div[style="display: flex; align-items: center; justify-content: space-between; width: 100%;"] {
+  color: var(--color) !important;
+  position: absolute;
+  top: 6px;
+  left: 8px;
+}
+
+div[class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"] {
+  outline: none !important;
+}
+
+button {
+  outline: none !important;
+}
+
+input {
+  outline: none !important;
+}
+
+textarea {
+  outline: none !important;
+}
+div {
+  outline: none !important;
+}
+
+.no-arrows::-webkit-outer-spin-button,
+.no-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-arrows {
+  -moz-appearance: textfield;
+}
+div[class="dropdown-container"] {
+  position: relative;
+  outline: 0;
+  background-color: var(--background-color) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 0.5rem !important;
+}
+.rmsc .dropdown-container:focus-within {
+  border-color: var(--border-color) !important;
+  box-shadow: 0 0 0 1px var(--box-shadow-color) !important;
+}
+.rmsc .dropdown-content .panel-content {
+  overflow: hidden;
+  border: 1px solid var(--border-color) !important;
+  background-color: var(--background-color) !important;
+  box-shadow: 0 0 0 1px var(--box-shadow-color) !important;
+}
+.rmsc .options li {
+  list-style: none;
+  margin: 0;
+  color: white !important;
+}
+.rmsc .select-item.selected {
+  background-color: var(--background-color) !important;
+}
+.rmsc .select-item:hover {
+  background-color: var(--background-color) !important;
+}
+.rmsc .search input:focus {
+  background-color: var(--background-color) !important;
+  color: white !important;
+}
+.rmsc .dropdown-heading .dropdown-heading-value {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  color: white !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.rmsc .options {
+  max-height: 100px !important;
+  overflow-y: auto;
+  margin: 0;
+  padding-left: 0;
+}
+.rmsc .search input {
+  background: none;
+  height: var(--rmsc-h);
+  color: white !important;
+  padding: 0 var(--rmsc-p);
+  width: 100%;
+  outline: 0;
+  border: 0;
+  font-size: 1em;
+}
+.blur-none {
+  backdrop-filter: none !important;
+  filter: none !important;
+  z-index: 1; /* Ensure it stays on top */
+  position: relative;
+}
+.__floater__arrow svg polygon {
+  fill: #1a191c;
+}
