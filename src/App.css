@@ -361,7 +361,6 @@ div[class="dropdown-container"] {
   box-shadow: 0 0 0 1px var(--box-shadow-color) !important;
 }
 .rmsc .dropdown-content .panel-content {
-  overflow: hidden;
   border: 1px solid var(--border-color) !important;
   background-color: var(--background-color) !important;
   box-shadow: 0 0 0 1px var(--box-shadow-color) !important;

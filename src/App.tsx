@@ -377,7 +377,7 @@ export default function App() {
   return (
     <div
       className={cn(
-        `h-screen w-[100%] max-w-[100%] bg-lightBackgroundColor dark:bg-backgroundApp overflow-hidden flex items-start font-sans overflow-x-hidden`
+        `h-screen w-[100%] max-w-[100%] bg-lightBackgroundColor dark:bg-backgroundApp flex items-start font-sans overflow-x-hidden`
       )}
     >
       <JoyrideComponent
@@ -407,7 +407,7 @@ export default function App() {
       <div
         // className='w-full overflow-hidden'
         className={cn(
-          `max-h-screen w-full overflow-hidden`,
+          `max-h-screen w-full`,
           isOpen ? "w-full" : "w-full",
           isDashboardTab && "overflow-y-auto scrollbar-hide"
         )}
