@@ -337,7 +337,7 @@ const MainAccounts: React.FC<IProps> = ({
   const disabledSome = !selectedGroup;
 
   return (
-    <div className="w-full relative px-6">
+    <div className="w-full relative px-6 overflow-y-auto">
       {isLoadingData ? (
         <div className="w-full  mt-[25%] flex items-center justify-center content-center">
           <Icons.Spinner className="w-20 h-20 text-primary" />

@@ -282,7 +282,7 @@ const MainTasks: FC<{
   const disabledSome = !selectedGroup;
 
   return (
-    <div className="w-full relative px-6 pt-6">
+    <div className="w-full relative px-6 pt-6 overflow-y-auto">
       <div className="w-full flex items-center justify-between">
         <div className=" flex items-center gap-4 pb-6">
           <LabelInput

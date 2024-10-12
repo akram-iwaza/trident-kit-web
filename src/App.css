@@ -56,13 +56,13 @@ button {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #93e5ab; /* or any other color */
+  background: #d0d6d4; /* or any other color */
 }
 
 /* Customize scrollbar for Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #93e5ab #d0d6d4;
+  scrollbar-color: gray;
 }
 
 *::-webkit-scrollbar-corner {

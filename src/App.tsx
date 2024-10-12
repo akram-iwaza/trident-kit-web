@@ -377,7 +377,7 @@ export default function App() {
   return (
     <div
       className={cn(
-        `h-screen w-[100%] max-w-[100%] bg-lightBackgroundColor dark:bg-backgroundApp flex items-start font-sans overflow-x-hidden`
+        `h-screen w-[100%] max-w-[100%] bg-lightBackgroundColor dark:bg-backgroundApp flex items-start font-sans overflow-hidden`
       )}
     >
       <JoyrideComponent

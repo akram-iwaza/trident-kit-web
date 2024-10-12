@@ -222,7 +222,7 @@ const MainSettings: FC<IPropsMainSettings> = ({
   return (
     <div
       className={cn(
-        `w-full flex flex-col items-start overflow-y-auto max-h-screen px-6 overflow-x-hidden`
+        `w-full flex flex-col items-start overflow-y-auto max-h-screen px-6 overflow-x-hidden `
       )}
     >
       <div className={cn(`w-full flex items-center justify-between py-6`)}>

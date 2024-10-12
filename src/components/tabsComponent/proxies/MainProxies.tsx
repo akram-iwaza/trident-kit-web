@@ -283,7 +283,7 @@ const MainProxies: React.FC<IProps> = ({
     !selectedGroup || (selectedGroup.myGroupProxies?.length ?? 0) === 0;
 
   return (
-    <div className="w-full px-6">
+    <div className="w-full px-6 overflow-y-auto">
       <div className="w-full flex items-center justify-between py-6">
         <ButtonTabs
           id="main-proxies-step-2"

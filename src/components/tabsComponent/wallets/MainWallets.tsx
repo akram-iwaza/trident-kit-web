@@ -374,7 +374,7 @@ const MainWallets: React.FC<IProps> = ({
   }, [searchedValue]);
 
   return (
-    <div className="w-full max-w-full px-6">
+    <div className="w-full max-w-full px-6 overflow-y-auto">
       <div className="w-full flex flex-col gap-5 items-start  py-6">
         <div className="w-full flex items-center justify-between">
           <div className="w-full flex items-center gap-[0.625rem]">
